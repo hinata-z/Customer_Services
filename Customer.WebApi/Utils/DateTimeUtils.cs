@@ -23,7 +23,7 @@
             return dateTimeOffset.ToUnixTimeSeconds();
         }
 
-        public static DateTime getDateTimeByUninx(long unixTime)
+        public static DateTime GetDateTimeByUninx(long unixTime)
         {
             return DateTimeOffset.FromUnixTimeMilliseconds(unixTime).DateTime.ToLocalTime();
         }

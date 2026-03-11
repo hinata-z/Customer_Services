@@ -12,7 +12,6 @@ using System.Text.Unicode;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure controllers with custom filters and formatters
-// ... 现有代码 ...
 
 // Configure controllers with custom filters and formatters
 builder.Services.AddControllers(options => {
@@ -57,8 +56,6 @@ builder.Services.AddSingleton(provider =>
     options.PropertyNameCaseInsensitive = true;
     return options;
 });
-
-// ... 现有代码 ...
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
